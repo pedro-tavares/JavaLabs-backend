@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module rename-to='restyBackend'>
-	<source path='com/restyGWT/dto' />
+<module rename-to='javalabs'>
+	<source path='com/javalabs/dto' />
 </module>
