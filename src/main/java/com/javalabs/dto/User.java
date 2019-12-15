@@ -2,13 +2,19 @@ package com.javalabs.dto;
 
 import java.io.Serializable;
 
+import javax.ws.rs.QueryParam;
+
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@QueryParam("name")
 	private Long id;
+	@QueryParam("name")
 	private String name;
+	@QueryParam("email")
 	private String email;
+	@QueryParam("password")
 	private String password;
 
 	public User() {}
