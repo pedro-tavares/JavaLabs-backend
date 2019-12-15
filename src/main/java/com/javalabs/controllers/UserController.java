@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.javalabs.constants.IConstants;
 import com.javalabs.dto.User;
 import com.javalabs.services.users.UserEntity;
-import com.javalabs.services.users.UsersService;
+import com.javalabs.services.users.UserService;
 
 @RestController
 @CrossOrigin
@@ -21,7 +21,7 @@ import com.javalabs.services.users.UsersService;
 public class UserController {
 
 	@Autowired
-	UsersService service;
+	UserService service;
 
 	@Autowired
 	DozerBeanMapper mapper;
