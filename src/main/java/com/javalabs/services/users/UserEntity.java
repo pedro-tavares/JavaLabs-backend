@@ -35,11 +35,11 @@ public class UserEntity {
 		this.id = id;
 	}
 
-	public String getUserName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setUserName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
