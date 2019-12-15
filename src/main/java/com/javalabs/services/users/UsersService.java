@@ -19,7 +19,7 @@ public class UsersService {
 		return userRepo.save(user);
 	}
 
-	public UserEntity findByName(String userName) {
-		return userRepo.findByuserName(userName);
+	public UserEntity findByEmail(String email) {
+		return userRepo.findByEmail(email);
 	}
 }

@@ -31,8 +31,8 @@ public class UserController {
 	}
 
 	@RequestMapping(path = "/addUser", method = RequestMethod.POST)
-	public User addUser(@RequestParam("username") String userName) {
-		UserEntity entity = service.addUser(new UserEntity(userName));
+	public User addUser(@RequestParam("user") User user) {
+		UserEntity entity = service.addUser(new UserEntity(user));
 		return mapper.map(entity, User.class);
 	}
 }
