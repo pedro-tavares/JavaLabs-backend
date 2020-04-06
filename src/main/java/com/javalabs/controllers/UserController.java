@@ -10,14 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javalabs.constants.IConstants;
 import com.javalabs.dto.User;
 import com.javalabs.services.users.UserEntity;
 import com.javalabs.services.users.UserService;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path = IConstants.PATH_USERS)
+@RequestMapping(path = "/users")
 public class UserController {
 
 	@Autowired
@@ -26,13 +25,13 @@ public class UserController {
 	@Autowired
 	DozerBeanMapper mapper;
 
-	@RequestMapping(path = IConstants.PATH_ADD_USER, method = RequestMethod.POST)
+	@RequestMapping(path = "/addUser", method = RequestMethod.POST)
 	public User addUser(@RequestBody User user) {
 		UserEntity entity = service.addUser(new UserEntity(user));
 		return mapper.map(entity, User.class);
 	}
 
-	@RequestMapping(path = IConstants.PATH_GET_ALL_USERS, method = RequestMethod.GET)
+	@RequestMapping(path = "/getAllUsers", method = RequestMethod.GET)
 	public List<UserEntity> getAllUsers() {
 		return service.getAllUsers();
 	}

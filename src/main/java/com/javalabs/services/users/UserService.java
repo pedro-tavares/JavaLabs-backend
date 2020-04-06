@@ -9,17 +9,17 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
 	@Autowired
-	private UserRepository userRepo;
+	private UserRepository userRepository;
 
 	public List<UserEntity> getAllUsers() {
-		return userRepo.findAll();
+		return userRepository.findAll();
 	}
 
 	public UserEntity addUser(UserEntity user) {
-		return userRepo.save(user);
+		return userRepository.save(user);
 	}
 
 	public UserEntity findByEmail(String email) {
-		return userRepo.findByEmail(email);
+		return userRepository.findByEmail(email);
 	}
 }

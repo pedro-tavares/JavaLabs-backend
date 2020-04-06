@@ -1,4 +1,4 @@
-package com.javalabs.configs;
+package com.javalabs.config;
 
 import java.io.IOException;
 import java.io.PrintWriter;

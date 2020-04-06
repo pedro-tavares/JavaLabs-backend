@@ -1,4 +1,4 @@
-package com.javalabs.configs;
+package com.javalabs.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
